@@ -16,27 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yt2-Z6-Nwe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yt2-Z6-Nwe">
                                 <rect key="frame" x="107" y="150" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yt2-Z6-Nwe" secondAttribute="height" multiplier="2:1" id="IRm-1v-CTi"/>
+                                    <constraint firstAttribute="height" constant="100" id="fiL-TD-PTa"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us" title=""/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RHw-md-DMk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWU-Mi-2qz">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWU-Mi-2qz">
                                 <rect key="frame" x="107" y="438" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IWU-Mi-2qz" secondAttribute="height" multiplier="2:1" id="AkI-br-fiV"/>
+                                    <constraint firstAttribute="height" constant="100" id="XLI-Bo-m3g"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us" title=""/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="etx-4m-yUv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-v0-otJ">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-v0-otJ">
                                 <rect key="frame" x="107" y="294" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gZ5-v0-otJ" secondAttribute="height" multiplier="2:1" id="SoI-Bf-pNQ"/>
+                                    <constraint firstAttribute="height" constant="100" id="vxO-Jy-Ye8"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -46,6 +55,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IWU-Mi-2qz" firstAttribute="centerX" secondItem="gZ5-v0-otJ" secondAttribute="centerX" id="467-br-STk"/>
+                            <constraint firstItem="IWU-Mi-2qz" firstAttribute="top" secondItem="gZ5-v0-otJ" secondAttribute="bottom" constant="44" id="7EH-RX-7f8"/>
+                            <constraint firstItem="gZ5-v0-otJ" firstAttribute="centerX" secondItem="yt2-Z6-Nwe" secondAttribute="centerX" id="FW7-Sz-fCf"/>
+                            <constraint firstItem="gZ5-v0-otJ" firstAttribute="top" secondItem="yt2-Z6-Nwe" secondAttribute="bottom" constant="44" id="KVo-25-KKR"/>
+                            <constraint firstItem="yt2-Z6-Nwe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fXU-ts-7dN"/>
+                            <constraint firstItem="yt2-Z6-Nwe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="sek-1W-6ng"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cCw-mt-Jby"/>
                     <connections>
